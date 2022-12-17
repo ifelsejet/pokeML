@@ -1,0 +1,13 @@
+CSE 168 Lab 3 - Who's That Pokemon?
+Collaborators: Brandon Ortega, Axel Martinez Siliezar, Jatnael Montes
+
+Instructions: 
+1. Download datasets off Box link inside report
+2. Open 'PokeML_DenseNet301.ipynb' to run data augmention on dataset (will only augment data if variable "upload" is TRUE & folder contains less than 200 images)
+3. Open 'Copy_of_Pkemon_lab.ipynb' to run the actual model
+
+Potential Issues:
+* Since we are using Google Drive on a shared folder, the code might not work out of the box. Some workarounds are:
+- Upload dataset to Google Drive and update the Drive directories
+- Change the directory to use a local directory (issue with uploading augments to Google Drive, would have to change that)
+- Even with smaller batch_sizes, or lower epochs, the model generally takes a long time to run. Even with a dedicated GPU, we normally had to wait over 4 hours to train 5 epochs with the current parameters
